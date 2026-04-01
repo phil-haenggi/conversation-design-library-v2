@@ -1,0 +1,84 @@
+# Conversation Design Prompt Library
+
+> **Production-ready prompt templates** for designing human-centered conversational AI experiences and accessible, localized content.
+
+## Purpose
+
+This library provides prompt templates for two core disciplines in conversation design:
+
+- **Conversational AI** — Dialog patterns for chatbots, voice assistants, and conversational interfaces
+- **Accessibility & Localization** — Inclusive design and international adaptation for conversational experiences
+
+Each prompt includes comprehensive variable definitions, structured output formats (JSON/YAML), example implementations, and WCAG 3.0 Level AA accessibility requirements.
+
+---
+
+## Library Contents
+
+### Conversational AI (30 prompts)
+
+Design natural, coherent, and resilient dialog flows:
+
+| Category | Prompts |
+|----------|---------|
+| **Dialog Flow** | [Multi-Turn Dialog Design](conversation-design/_conversational-ai/multi-turn-dialog-design.md), [Task-Oriented Dialog](conversation-design/_conversational-ai/task-oriented-dialog.md), [Context Management](conversation-design/_conversational-ai/context-management.md), [Topic Switching](conversation-design/_conversational-ai/topic-switching.md) |
+| **Voice & Personality** | [Voice & Tone Calibration](conversation-design/_conversational-ai/voice-tone-calibration.md), [Personality Consistency](conversation-design/_conversational-ai/personality-consistency.md), [Sentiment Adaptation](conversation-design/_conversational-ai/sentiment-adaptation.md), [Response Length Optimization](conversation-design/_conversational-ai/response-length-optimization.md) |
+| **Error Handling** | [Fallback Strategies](conversation-design/_conversational-ai/fallback-strategies.md), [Error Recovery Flows](conversation-design/_conversational-ai/error-recovery-flows.md), [Conversational Repair](conversation-design/_conversational-ai/conversational-repair.md), [Disambiguation Prompts](conversation-design/_conversational-ai/disambiguation-prompts.md) |
+| **User Engagement** | [Proactive Suggestions](conversation-design/_conversational-ai/proactive-suggestions.md), [Re-engagement Prompts](conversation-design/_conversational-ai/reengagement-prompts.md), [Feedback Collection](conversation-design/_conversational-ai/feedback-collection.md), [Small Talk Design](conversation-design/_conversational-ai/small-talk-design.md) |
+| **Conversation Management** | [Confirmation Patterns](conversation-design/_conversational-ai/confirmation-patterns.md), [Clarifying Questions](conversation-design/_conversational-ai/clarifying-questions.md), [Acknowledgment Responses](conversation-design/_conversational-ai/acknowledgment-responses.md), [Closing Conversations](conversation-design/_conversational-ai/closing-conversations.md) |
+| **Transparency & Trust** | [Setting Expectations](conversation-design/_conversational-ai/setting-expectations.md), [Transparent Limitations](conversation-design/_conversational-ai/transparent-limitations.md), [Apologizing Effectively](conversation-design/_conversational-ai/apologizing-effectively.md), [Handoff to Human](conversation-design/_conversational-ai/handoff-to-human.md) |
+| **Advanced Patterns** | [Memory References](conversation-design/_conversational-ai/memory-references.md), [Interruption Handling](conversation-design/_conversational-ai/interruption-handling.md), [Multi-Language Switching](conversation-design/_conversational-ai/multi-language-switching.md), [Voice Assistant Adaptations](conversation-design/_conversational-ai/voice-assistant-adaptations.md), [Chitchat Boundaries](conversation-design/_conversational-ai/chitchat-boundaries.md), [Question Answering Patterns](conversation-design/_conversational-ai/question-answering-patterns.md) |
+
+### Accessibility & Localization (20 prompts)
+
+Build conversational experiences that work for everyone, everywhere:
+
+| Category | Prompts |
+|----------|---------|
+| **Assistive Technology** | [Screen Reader Content](conversation-design/_accessibility-localization/screen-reader-content.md), [Alternative Text Generation](conversation-design/_accessibility-localization/alternative-text-generation.md), [ARIA Label Creation](conversation-design/_accessibility-localization/aria-label-creation.md), [Keyboard Navigation Copy](conversation-design/_accessibility-localization/keyboard-navigation-copy.md), [Captions & Subtitles](conversation-design/_accessibility-localization/captions-subtitles.md) |
+| **Cognitive Accessibility** | [Plain Language Simplification](conversation-design/_accessibility-localization/plain-language-simplification.md), [Cognitive Accessibility](conversation-design/_accessibility-localization/cognitive-accessibility.md), [Color-Blind Safe Copy](conversation-design/_accessibility-localization/color-blind-safe-copy.md) |
+| **Internationalization** | [Internationalization Prep](conversation-design/_accessibility-localization/internationalization-prep.md), [Cultural Adaptation](conversation-design/_accessibility-localization/cultural-adaptation.md), [RTL Content Design](conversation-design/_accessibility-localization/rtl-content-design.md), [Idiomatic Expression Handling](conversation-design/_accessibility-localization/idiomatic-expression-handling.md), [Character Expansion Planning](conversation-design/_accessibility-localization/character-expansion-planning.md), [Translation Quality Checks](conversation-design/_accessibility-localization/translation-quality-checks.md) |
+| **Formatting & Conventions** | [Date/Time Localization](conversation-design/_accessibility-localization/date-time-localization.md), [Number/Currency Formatting](conversation-design/_accessibility-localization/number-currency-formatting.md), [Address Formatting](conversation-design/_accessibility-localization/address-formatting.md), [Name Formatting](conversation-design/_accessibility-localization/name-formatting.md) |
+| **Inclusive Language** | [Gender-Neutral Language](conversation-design/_accessibility-localization/gender-neutral-language.md), [Emoji Usage Guidelines](conversation-design/_accessibility-localization/emoji-usage-guidelines.md) |
+
+---
+
+## How to Use
+
+1. **Choose a prompt** — Browse the tables above or explore the folders directly
+2. **Replace `{{variables}}`** with your project context (system name, audience, tone, etc.)
+3. **Run with any LLM** — Works with Claude, ChatGPT, Gemini, Microsoft Copilot, or custom models
+4. **Get structured output** — Each prompt returns JSON/YAML you can integrate directly
+
+### Example
+
+```
+# Open a prompt
+conversation-design/_conversational-ai/fallback-strategies.md
+
+# Fill in variables
+ai_assistant_name: "Ava"
+confidence_threshold: 0.3
+fallback_scenario: "out-of-domain request"
+
+# Paste into your LLM and get structured fallback responses
+```
+
+---
+
+## Who This Is For
+
+- **Conversation designers** building chatbot and voice assistant dialog flows
+- **UX writers** crafting accessible, localized interface copy
+- **Product teams** standardizing conversational patterns across features
+- **AI engineers** designing graceful error handling and context management
+
+---
+
+## Credits
+
+Based on the [Content Design Prompt Library](https://github.com/phil-haenggi/conversation-design-library) by Adedayo Agarau.
+
+## License
+
+MIT License — use freely in personal and commercial projects.
