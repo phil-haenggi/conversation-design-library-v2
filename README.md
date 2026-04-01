@@ -77,4 +77,4 @@ fallback_scenario: "out-of-domain request"
 
 ## Credits
 
-A conversation design-specific adaptation of the [Content Design Prompt Library](https://github.com/phil-haenggi/conversation-design-library) by Adedayo Agarau.
+A conversation design-specific adaptation of the Content Design Prompt Library by Adedayo Agarau.
