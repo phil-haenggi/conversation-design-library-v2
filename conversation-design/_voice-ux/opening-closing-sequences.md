@@ -45,11 +45,11 @@ opening_closing_sequences:
         patterns:
           minimal:
             template: "{{greeting}}, this is {{agent_name}}. {{capability_frame}}"
-            example: "Hi, this is Aria. I can help you with your account."
+            example: "Hi, this is Aria AI. I can help you with your account."
             when: "Returning user, context already established"
           standard:
             template: "{{greeting}}, I'm {{agent_name}} from {{company}}. {{capability_frame_or_how_can_i_help}}"
-            example: "Hello, I'm Aria from TeleCo. How can I help you?"
+            example: "Hello, I'm Aria AI from TeleCo. How can I help you?"
             when: "New or unknown user, general entry point"
           authenticated:
             template: "{{greeting}}, {{user_name}}. {{capability_frame}}"
@@ -216,4 +216,4 @@ opening_closing_sequences:
 
 **Accessibility Requirements**: Openings must clearly identify the agent (for users relying on audio-only identification). Capability framing helps users with cognitive differences understand what the system can do. Pre-closings must be unambiguous questions so the user knows it's their turn. Terminal exchanges must use recognizable closing tokens ("goodbye," "take care") so users know the call is ending — especially important for users with auditory processing differences who might miss subtle cues.
 
-**Psychological Principles**: Primacy effect (first impressions) — the opening sets the tone for the entire interaction. Recency effect — the closing is the last experience and disproportionately affects satisfaction ratings. Zeigarnik effect — unresolved tasks linger; clean closings with summaries create cognitive closure. Schegloff's (1968) summons-answer sequence — openings must establish mutual availability before proceeding. Schegloff & Sacks (1973) — closings are collaborative achievements, not unilateral decisions.
+**Interactional & Psychological Principles**: Primacy effect (first impressions) — the opening sets the tone for the entire interaction. Recency effect — the closing is the last experience and disproportionately affects satisfaction ratings. Zeigarnik effect — unresolved tasks linger; clean closings with summaries create cognitive closure. Schegloff's (1968) summons-answer sequence — openings must establish mutual availability before proceeding. Schegloff & Sacks (1973) — closings are collaborative achievements, not unilateral decisions.
