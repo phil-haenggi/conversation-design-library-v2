@@ -1,4 +1,4 @@
-## Voice-to-Screen Handoff v1.0
+## Cross-modal: Voice-to-Screen Handoff v1.0
 
 **Purpose**: Design seamless transitions between voice and visual modalities — handling cases where a task started in voice is better completed on screen, or where visual output supplements a voice interaction.
 
@@ -176,4 +176,4 @@ voice_to_screen_handoff:
 
 **Accessibility Requirements**: Handoff links must be accessible (WCAG compliant destination pages). SMS links must work with screen readers. Always offer to continue by voice as an alternative — some users cannot use screen interfaces. Ensure pre-filled forms are labeled correctly for assistive technology. Never force a modality switch on users who depend on voice due to visual or motor impairments.
 
-**Psychological Principles**: Channel continuity (Rosen & Salomon, 2007) — context preservation across channels is the single biggest factor in cross-channel satisfaction. Effort justification — users who have already invested effort in a voice interaction will abandon if forced to restart on screen. Choice architecture (Thaler & Sunstein, 2008) — offering the handoff as an option (not a requirement) respects autonomy. Peak-end rule — a smooth handoff at the end of a voice interaction lifts overall experience ratings.
+**Interactional & Psychological Principles**: Channel continuity (Rosen & Salomon, 2007) — context preservation across channels is the single biggest factor in cross-channel satisfaction. Effort justification — users who have already invested effort in a voice interaction will abandon if forced to restart on screen. Choice architecture (Thaler & Sunstein, 2008) — offering the handoff as an option (not a requirement) respects autonomy. Peak-end rule — a smooth handoff at the end of a voice interaction lifts overall experience ratings.
