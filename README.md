@@ -7,7 +7,7 @@
 This library provides prompt templates for three core disciplines in conversation design:
 
 - **Conversational AI** — Dialog patterns for chatbots, voice assistants, and conversational interfaces
-- **Voice UX** — Guidelines for voice-first and voice-only conversational interfaces, grounded in interactional and psychological principles from Conversation Analysis and Linguistics
+- **Voice UX** — Guidelines for voice-first and voice-only conversational interfaces, grounded in interactional from Conversation Analysis and Linguistics
 - **Accessibility & Localization** — Inclusive design and international adaptation for conversational experiences
 
 Each prompt includes comprehensive variable definitions, structured output formats (JSON/YAML), example implementations, and WCAG 3.0 Level AA accessibility requirements.
@@ -42,7 +42,7 @@ Design voice-first and voice-only conversational experiences grounded in interac
 | **Interaction Management** | [Barge-In & Overlap Management](conversation-design/_voice-ux/barge-in-overlap-management.md), [Grounding & Confirmation](conversation-design/_voice-ux/grounding-confirmation-voice.md), [Opening & Closing Sequences](conversation-design/_voice-ux/opening-closing-sequences.md) |
 | **Cross-Modal** | [Voice-to-Screen Handoff](conversation-design/_voice-ux/voice-to-screen-handoff.md) |
 
-Each Voice UX prompt draws on interactional and psychological principles — including turn-taking organization (Sacks, Schegloff & Jefferson), repair preference hierarchy, grounding theory (Clark & Brennan), end-focus and information structure (Halliday), face-threat mitigation (Brown & Levinson), and prosodic processing research — to ground design recommendations in how spoken interaction actually works.
+Each Voice UX prompt draws on interactional principles — including turn-taking organization (Sacks, Schegloff & Jefferson), repair preference hierarchy, end-focus and information structure (Halliday), and prosodic processing research — to ground design recommendations in how spoken interaction actually works.
 
 ### Accessibility & Localization (20 prompts)
 
