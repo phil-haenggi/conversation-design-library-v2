@@ -12,6 +12,8 @@ This library provides prompt templates for three core disciplines in conversatio
 
 Each prompt includes comprehensive variable definitions, structured output formats (JSON/YAML), example implementations, and WCAG 3.0 Level AA accessibility requirements.
 
+This library is a starting point, not a finished product. Prompts will be revised, expanded, and restructured as patterns are tested against use cases and new research surfaces.
+
 ---
 
 ## Library Contents
