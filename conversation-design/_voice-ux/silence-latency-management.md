@@ -85,14 +85,7 @@ silence_management:
     at_transition_relevance_place:
       definition: "The agent has asked a question or made a response-relevant utterance, and the user does not respond."
       timeline:
-        0_to_1_second: "Normal processing time. Do nothing."
-        1_to_3_seconds:
-          action: "Gentle prompt or re-offer"
-          patterns:
-            - "Take your time."
-            - "Still there?"
-            - "No rush."
-          rationale: "Acknowledges the silence without pressure. 'Take your time' reframes the silence as acceptable."
+        0_to_3_secondS: "Normal processing time. Do nothing."
         3_to_6_seconds:
           action: "Check availability and/or rephrase"
           patterns:
@@ -117,7 +110,7 @@ silence_management:
 
     mid_utterance_silence:
       definition: "The user starts speaking but stops mid-sentence"
-      approach: "Wait slightly longer than for TRP silence (users may be formulating), then gently prompt"
+      approach: "Wait slightly longer than for TRP (Transition Relevance Place) silence (users may be formulating), then gently prompt"
       timeline:
         2_to_4_seconds:
           patterns:
@@ -161,7 +154,7 @@ silence_management:
           agent: "I understand. [pause] Let me get someone who can help you directly."
           analysis: "'I understand' validates the emotion. Pause creates space. Then the action follows."
 
-    persona_through_acknowledgment:
+    persona_through_acknowledgment (cf. agent persona skill, Nathan Lucy et al.):
       principle: "The choice of acknowledgment token is a powerful carrier of persona and linguistic fingerprint (see personality-consistency.md). The tokens an agent habitually uses become part of its voice identity."
       examples:
         professional_persona: ["Certainly.", "Of course.", "Understood."]
@@ -225,4 +218,4 @@ silence_management:
 
 **Accessibility Requirements**: Users with hearing impairments using voice interfaces via captions or hearing aids need explicit verbal signals for processing pauses — never rely on audio tones alone. Users with anxiety or cognitive differences may interpret silence as failure — always explain pauses. Timeout warnings must be clear and offer state preservation. Never force users to repeat information after a timeout.
 
-**Psychological Principles**: Jefferson's (1989) "standard maximum silence" of ~1 second sets the baseline for acceptable gaps. The "accountability" of silence (Heritage, 1984) means every silence is interpreted — unmanaged silence generates negative attributions. Pre-announcements (Schegloff, 2007) reduce uncertainty by setting expectations. Acknowledgment tokens serve as "continuers" (Schegloff, 1982) that maintain the interactional channel. The mere exposure effect means consistent acknowledgment token choice reinforces persona recognition over time.
+**Interactional & Psychological Principles**: Jefferson's (1989) "standard maximum silence" of ~1 second sets the baseline for acceptable gaps. The "accountability" of silence (Heritage, 1984) means every silence is interpreted — unmanaged silence generates negative attributions. Pre-announcements (Schegloff, 2007) reduce uncertainty by setting expectations. Acknowledgment tokens serve as "continuers" (Schegloff, 1982) that maintain the interactional channel. The mere exposure effect means consistent acknowledgment token choice reinforces persona recognition over time.
