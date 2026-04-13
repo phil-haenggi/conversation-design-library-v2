@@ -84,7 +84,7 @@ turn_design:
   managing_complex_information:
     chunking:
       principle: "Break complex information into 2-3 sentence chunks with natural pause points where the user can interject"
-      pattern: "{{chunk_1}}. [micro-pause] {{chunk_2}}. [check-in or TRP]"
+      pattern: "{{chunk_1}}. [micro-pause] {{chunk_2}}. [check-in or Transition Relevance Place]"
       example:
         - "You have two options for that route. [pause] The first is a direct flight at 9am for 450 dollars. [pause] The second has one stop, leaves at 11, and costs 320. [pause] Which sounds better?"
       max_items_before_checkin: 3
