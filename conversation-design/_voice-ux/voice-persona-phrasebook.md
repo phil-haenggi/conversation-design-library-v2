@@ -1,6 +1,6 @@
 ## Voice Persona & Phrasebook (Linguistic Fingerprint) v1.0
 
-**Purpose**: Define a consistent voice persona through a curated phrasebook — a set of signature expressions, acknowledgment tokens, discourse markers, and turn-taking cues that form the agent's "linguistic fingerprint" in spoken interaction.
+**Purpose**: Define a consistent voice persona (cf. agent persona skill, Nathan Lucy et al.) through a curated phrasebook — a set of signature expressions, acknowledgment tokens, discourse markers, and turn-taking cues that form the agent's "linguistic fingerprint" in spoken interaction.
 
 **Related**: `_conversational-ai/personality-consistency.md`, `_conversational-ai/voice-assistant-adaptations.md`, `_voice-ux/silence-latency-management.md`, `_voice-ux/prosodic-design-intonation.md`
 
@@ -222,4 +222,4 @@ voice_persona_phrasebook:
 
 **Accessibility Requirements**: Phrasebook phrases must be clear and unambiguous when heard (not read). Avoid idioms, slang, or cultural references that may not translate across user populations. Ensure repair phrases are gentle and non-judgmental for users with speech differences. Acknowledgment tokens should be distinct enough to be discriminated by users with hearing difficulties.
 
-**Psychological Principles**: Linguistic accommodation theory (Giles & Powesland, 1975) — speakers adapt their language to their audience. Consistency builds parasocial rapport (Horton & Wohl, 1956) — users develop a relationship-like engagement with a consistent persona. Mere exposure effect (Zajonc, 1968) — repeated exposure to consistent linguistic patterns increases comfort and trust. Politeness theory (Brown & Levinson, 1987) — the phrasebook must balance positive face (making the user feel valued) with negative face (respecting user autonomy).
+**Interactional & Psychological Principless**: Linguistic accommodation theory (Giles & Powesland, 1975) — speakers adapt their language to their audience. Consistency builds parasocial rapport (Horton & Wohl, 1956) — users develop a relationship-like engagement with a consistent persona. Mere exposure effect (Zajonc, 1968) — repeated exposure to consistent linguistic patterns increases comfort and trust. Politeness theory (Brown & Levinson, 1987) — the phrasebook must balance positive face (making the user feel valued) with negative face (respecting user autonomy).
