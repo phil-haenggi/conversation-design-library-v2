@@ -83,8 +83,8 @@ fallback_scenario: "out-of-domain request"
 
 ## Who This Is For
 
-- **Conversation designers** building chatbot and voice assistant dialog flows
-- **UX writers** crafting accessible, localized interface copy
+- **Conversation designers** building chatbot and voice agent dialog flows
+- **UX writers** crafting accessible, localized and CxD-optimized interface copy
 - **Product teams** standardizing conversational patterns across features
 - **AI engineers** designing graceful error handling and context management
 
