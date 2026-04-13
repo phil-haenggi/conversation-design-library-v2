@@ -8,7 +8,7 @@
 
 **PROMPT:**
 
-Design prosodic guidelines for {{voice_agent}} operating in {{domain}}. Specify how intonation, stress, pace, and pausing should be applied across turn types to support comprehension, turn management, and persona expression.
+Design prosodic guidelines for {{voice_agent}} operating in {{domain}}. Specify how intonation, stress, pace, and pausing should be applied across turn types to support comprehension, turn management, and persona expression (cf. agent persona skill, Nathan Lucy et al.).
 
 === PROSODIC CONTEXT ===
 - Voice synthesis: {{synthesis_engine}} (TTS_engine/neural_voice/recorded_prompts)
@@ -200,4 +200,4 @@ prosodic_design:
 
 **Accessibility Requirements**: Prosodic design is critical for users who depend on auditory-only processing. Clear intonation contours help users with auditory processing difficulties distinguish questions from statements. Consistent pacing supports users with cognitive differences. Avoid rapid or highly variable speech rates that may be difficult for users with hearing loss or non-native listeners. SSML should be tested with multiple voice engines and screen readers.
 
-**Psychological Principles**: Prosody is processed pre-attentively — listeners extract intonation patterns before fully parsing lexical content (Cutler, Dahan & van Donselaar, 1997). The "garden path" effect in spoken language occurs when prosodic cues mislead about syntactic structure — proper prosodic design prevents this. Pitch range correlates with perceived warmth and engagement (Scherer, 1986). Speech rate affects perceived competence and trustworthiness (Apple, Streeter & Krauss, 1979) — moderate rates score highest on both dimensions.
+**Interactional & Psychological Principles**: Prosody is processed pre-attentively — listeners extract intonation patterns before fully parsing lexical content (Cutler, Dahan & van Donselaar, 1997). The "garden path" effect in spoken language occurs when prosodic cues mislead about syntactic structure — proper prosodic design prevents this. Pitch range correlates with perceived warmth and engagement (Scherer, 1986). Speech rate affects perceived competence and trustworthiness (Apple, Streeter & Krauss, 1979) — moderate rates score highest on both dimensions.
