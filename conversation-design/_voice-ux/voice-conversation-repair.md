@@ -140,7 +140,7 @@ voice_repair:
     example_sequence:
       turn_1:
         user: "[unclear input about account]"
-        agent: "Sorry, I didn't quite catch that."
+        agent: "Sorry?"
         level: "Level 1 — open class"
       turn_2:
         user: "I said change the thing on my account"
@@ -253,7 +253,7 @@ voice_repair:
 **Example 5: Repair Failure → Pivot**
 - Agent: "What's the name on the reservation?"
 - User: "[unclear name]"
-- Agent: "Sorry, I didn't catch that. Could you say the name again?"
+- Agent: "Could you say the name again?"
 - User: "[still unclear]"
 - Agent: "I'm still having trouble with the name. Could you spell it for me?"
 - User: "S-C-H-W-A-R-T-Z"
@@ -264,4 +264,4 @@ voice_repair:
 
 **Accessibility Requirements**: Repair sequences must be patient and non-judgmental. Users with speech impairments, accents, or non-native pronunciation may trigger more ASR errors — the repair system must never make them feel at fault. Offer alternative input modalities (spelling, keypad, text fallback) early for users who struggle with voice recognition. Never use blame-attributing language ("I can't understand you"). Always frame as the system's limitation ("I'm having trouble with that").
 
-**Psychological Principles**: The repair preference hierarchy (Schegloff, Jefferson & Sacks, 1977) reflects a universal preference for minimal disruption. Face-threat mitigation (Brown & Levinson, 1987) — stronger repair forms are more face-threatening to the user (implying their talk was deficient), which is why we start weak. The "progressivity bias" (Stivers & Robinson, 2006) — participants prefer to move forward; repair is tolerated only because it serves eventual understanding. Response design (Heritage, 1984) — the form of the repair initiator shapes the form of the repair itself, so choosing the right level directly affects repair efficiency.
+**Interactional & Psychological Principless**: The repair preference hierarchy (Schegloff, Jefferson & Sacks, 1977) reflects a universal preference for minimal disruption. Face-threat mitigation (Brown & Levinson, 1987) — stronger repair forms are more face-threatening to the user (implying their talk was deficient), which is why we start weak. The "progressivity bias" (Stivers & Robinson, 2006) — participants prefer to move forward; repair is tolerated only because it serves eventual understanding. Response design (Heritage, 1984) — the form of the repair initiator shapes the form of the repair itself, so choosing the right level directly affects repair efficiency.
