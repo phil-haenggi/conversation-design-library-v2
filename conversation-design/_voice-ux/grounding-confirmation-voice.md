@@ -20,13 +20,6 @@ Design grounding and confirmation strategies for {{voice_agent}} handling {{use_
 === OUTPUT REQUIREMENTS ===
 
 ```yaml
-grounding_confirmation:
-  ca_foundation:
-    grounding_in_interaction:
-      definition: "Grounding is the collaborative process by which participants in conversation establish that an utterance has been understood well enough for current purposes (Clark & Schaefer, 1989). In face-to-face talk, grounding relies heavily on visual cues — nods, gaze, facial expressions. In voice-only interaction, all grounding must be accomplished verbally, which creates a design tension: too little grounding risks misunderstanding; too much grounding stalls progressivity."
-      key_insight: "The criterion for 'sufficient grounding' is not absolute accuracy — it is fitness for the current purpose. A casual preference ('I like Italian food') needs less rigorous confirmation than a bank transfer amount. Design grounding depth to match stakes."
-      reference: "Clark & Brennan (1991) — Grounding in Communication"
-
   confirmation_types:
     implicit_confirmation:
       definition: "The agent weaves the understood information into its next turn without explicitly asking for verification. The user can correct if the agent got it wrong, but no confirmation turn is required."
@@ -138,14 +131,6 @@ grounding_confirmation:
       example: "Alright, let me confirm: round trip from Boston to London, March 15th to 22nd, one passenger, economy. Should I go ahead and search?"
       design_note: "The summary serves as the 'last chance' repair opportunity. It is the user's final checkpoint before commitment. Always pause briefly after the summary to give the user time to process before asking for confirmation."
 
-    incremental_grounding:
-      definition: "Ground each piece of information as it is received, rather than waiting for a summary at the end"
-      when: "Long multi-field sequences where a final summary would be too much to process"
-      pattern: "Confirm each field via implicit echo, then do a lighter summary at the end"
-      example:
-        agent: "London Heathrow. [grounded] March 15th. [grounded] One passenger. [grounded] Economy. [grounded] Alright, one-way to London Heathrow, March 15th, economy. Sound right?"
-        analysis: "Each field was individually grounded through echo. The final summary is lighter because the user has already verified each piece. This is more robust than grounding only at the end."
-
   grounding_failures_and_recovery:
     user_disconfirms:
       pattern: "Accept correction + re-ground the corrected value + resume"
@@ -245,4 +230,4 @@ grounding_confirmation:
 
 **Accessibility Requirements**: Grounding is inherently accessibility-friendly — it verifies understanding, which benefits all users. For users with hearing impairments, always echo critical values verbally (do not rely on display). For users with cognitive differences, prefer incremental grounding (one field at a time) over long summaries. For users with speech differences, allow extra time after confirmations and accept non-verbal confirmation (keypad press) as alternative.
 
-**Psychological Principles**: Common ground theory (Clark, 1996) — communication succeeds when participants maintain shared understanding. The "least collaborative effort" principle (Clark & Wilkes-Gibbs, 1986) — speakers minimize the total effort required to achieve grounding. Confirmation bias risk — once an agent states a value, users may accept it even if slightly wrong; use reformulation and digit-by-digit to break this bias. Trust calibration — explicit confirmation on high-stakes actions builds trust proportional to risk.
+**Interactional & Psychological Principles**: Common ground theory (Clark, 1996) — communication succeeds when participants maintain shared understanding. The "least collaborative effort" principle (Clark & Wilkes-Gibbs, 1986) — speakers minimize the total effort required to achieve grounding. Confirmation bias risk — once an agent states a value, users may accept it even if slightly wrong; use reformulation and digit-by-digit to break this bias. Trust calibration — explicit confirmation on high-stakes actions builds trust proportional to risk.
