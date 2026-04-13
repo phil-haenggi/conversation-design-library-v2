@@ -25,7 +25,7 @@ barge_in_management:
     overlap_in_conversation:
       principle: "In natural conversation, overlap (simultaneous speech) occurs regularly — it is not a system failure but a structural feature of turn-taking. Sacks, Schegloff & Jefferson (1974) identified that most overlap occurs at or near transition relevance places (TRPs), where speaker change is legitimately possible. Voice UX should treat barge-in as a natural conversational event, not an error."
       types_of_overlap:
-        transitional: "User begins speaking near a TRP — this is orderly, expected overlap"
+        transitional: "User begins speaking near a TRP (Transition Relevance Place) — this is orderly, expected overlap"
         recognitional: "User recognizes where the agent's turn is going and responds early — a sign of engagement, not rudeness"
         competitive: "User speaks to actively interrupt — often due to impatience, urgency, or the agent saying something wrong"
         accidental: "Background noise, side conversation, or unintended activation"
@@ -179,4 +179,4 @@ barge_in_management:
 
 **Accessibility Requirements**: Barge-in support is an accessibility feature — it respects user agency and accommodates different processing speeds. Users with motor speech disorders may have delayed or atypical barge-in timing — systems should have generous overlap windows. Ensure barge-in is available in all modalities (speech and keypress for phone). Never penalize users for interrupting (e.g., by restarting from the beginning).
 
-**Psychological Principles**: User agency and perceived control (Skinner, 1996) — the ability to interrupt increases perceived control and satisfaction. Conversational alignment (Pickering & Garrod, 2004) — smooth barge-in handling signals that the agent is a competent conversational partner. Frustration threshold (Norman, 2013) — inability to interrupt a long agent utterance is one of the top voice UX frustrations. Competitive overlap resolution (Schegloff, 2000) — in natural conversation, the interrupter typically 'wins' the floor; voice UX should mirror this by yielding.
+**Interactional & Psychological Principles**: User agency and perceived control (Skinner, 1996) — the ability to interrupt increases perceived control and satisfaction. Conversational alignment (Pickering & Garrod, 2004) — smooth barge-in handling signals that the agent is a competent conversational partner. Frustration threshold (Norman, 2013) — inability to interrupt a long agent utterance is one of the top voice UX frustrations. Competitive overlap resolution (Schegloff, 2000) — in natural conversation, the interrupter typically 'wins' the floor; voice UX should mirror this by yielding.
