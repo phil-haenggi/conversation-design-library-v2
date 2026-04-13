@@ -111,9 +111,9 @@ no_input_no_match:
       approach:
         - "Own the failure ('I didn't quite get that' — not 'You weren't clear')"
         - "Redirect toward the specific information you need"
-        - "Offer a constrained format if the open-ended one failed"
+        - "Offer a constrained format if the open-ended one failed (this is the least preferred strategy, however; do not teach commands/do not teach the user how to talk)"
       patterns:
-        - "I didn't quite catch that. Could you tell me just the {{specific_field}}?"
+        - "I didn't catch that. Could you tell me just the {{specific_field}}?"
         - "Sorry, I'm not sure I understood. Are you looking to {{option_1}} or {{option_2}}?"
         - "Hmm, I didn't get that. Try saying just the {{data_type}} — for example, {{example}}."
       example:
@@ -147,7 +147,7 @@ no_input_no_match:
         - "Offer callback"
         - "Provide self-service URL"
       patterns:
-        - "I'm sorry I'm having trouble understanding. Let me connect you with a person who can help."
+        - "I'm having trouble understanding. Let me connect you with a person who can help."
         - "This might be easier to handle in our app or online. Can I text you a link?"
         - "I appreciate your patience. I'm going to transfer you to an agent who can take it from here."
       example:
@@ -172,7 +172,7 @@ no_input_no_match:
 
     track_cumulative_failures:
       principle: "Track failures across the full conversation, not just per-question. If the user has hit no-match on 3 different questions, the voice channel may not be viable — offer escalation even if each individual question hasn't exhausted its attempts."
-      threshold: "3-4 cumulative failures across different prompts should trigger a proactive escalation offer."
+      threshold: "2-3 cumulative failures across different prompts should trigger a proactive escalation offer."
 
     tailor_timeouts_to_context:
       principle: "Not all silences should have the same timeout"
@@ -224,4 +224,4 @@ no_input_no_match:
 
 **Accessibility Requirements**: No-input handling must accommodate users with speech onset delays, stuttering, or motor speech difficulties — extend timeouts generously and never rush. No-match handling must not penalize users with accents, non-native pronunciation, or atypical speech patterns — offer spelling, keypad, and text alternatives early. Escalation to human agents must preserve all context to avoid re-explanation, which is especially burdensome for users with communication difficulties.
 
-**Psychological Principles**: Learned helplessness (Seligman, 1975) — repeated failures with no clear path forward lead to disengagement; graduated escalation prevents this. Attribution theory (Weiner, 1985) — attributing failure to the system (not the user) preserves self-efficacy and willingness to try again. Reactance theory (Brehm, 1966) — users who feel trapped (no exit, no alternatives) become frustrated; always offer exits. The "3-strike" convention is widely recognized in voice UX (Turunen & Hakulinen, 2003) and matches user expectations for when the system should try something different.
+**Interactional & Psychological Principles**: Learned helplessness (Seligman, 1975) — repeated failures with no clear path forward lead to disengagement; graduated escalation prevents this. Attribution theory (Weiner, 1985) — attributing failure to the system (not the user) preserves self-efficacy and willingness to try again. Reactance theory (Brehm, 1966) — users who feel trapped (no exit, no alternatives) become frustrated; always offer exits. The "2-3 strike" convention is widely recognized in voice UX (Turunen & Hakulinen, 2003) and matches user expectations for when the system should try something different.
