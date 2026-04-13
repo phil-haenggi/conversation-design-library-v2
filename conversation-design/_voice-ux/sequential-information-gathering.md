@@ -100,7 +100,7 @@ sequential_gathering:
 
   pacing_and_rhythm:
     between_questions:
-      principle: "Allow a micro-pause (~300-500ms) between the acknowledgment and the next question. This gives the user a beat to process."
+      principle: "Allow a micro-pause (~300ms) between the acknowledgment and the next question. This gives the user a beat to process."
       pattern: "{{acknowledgment}}. [300ms pause] {{next_question}}"
 
     dont_rush:
@@ -171,4 +171,4 @@ sequential_gathering:
 
 **Accessibility Requirements**: One question at a time is inherently more accessible — it reduces cognitive load, supports users with working memory differences, and allows screen reader / voice-only users to process each field independently. Never bundle multiple questions. Always allow the user to go back and correct a previous answer without restarting.
 
-**Psychological Principles**: Adjacency pair structure (Schegloff & Sacks, 1973) is the fundamental unit of conversational interaction. Sequential gathering mirrors the "stepwise progression" observed in institutional talk (e.g., medical intake, service encounters). The Zeigarnik effect means users are motivated to complete a sequence once started — progress signals reinforce this. Cognitive load theory (Sweller) supports one-item-at-a-time processing in the auditory channel.
+**Interactional & Psychological Principles**: Adjacency pair structure (Schegloff & Sacks, 1973) is the fundamental unit of conversational interaction. Sequential gathering mirrors the "stepwise progression" observed in institutional talk (e.g., medical intake, service encounters). The Zeigarnik effect means users are motivated to complete a sequence once started — progress signals reinforce this. Cognitive load theory (Sweller) supports one-item-at-a-time processing in the auditory channel.
