@@ -6,8 +6,8 @@
 
 This library provides prompt templates for three core disciplines in conversation design:
 
-- **Conversational AI** — Dialog patterns for chatbots, voice assistants, and conversational interfaces
-- **Voice UX** — Guidelines for voice-first and voice-only conversational interfaces, grounded in interactional from Conversation Analysis and Linguistics
+- **Conversational AI** — Dialog patterns for chatbots, agents, and various other conversational user interfaces
+- **Voice UX** — Guidelines for voice-first and voice-only conversational interfaces, grounded in interactional principles from Conversation Analysis and Linguistics
 - **Accessibility & Localization** — Inclusive design and international adaptation for conversational experiences
 
 Each prompt includes comprehensive variable definitions, structured output formats (JSON/YAML), example implementations, and WCAG 3.0 Level AA accessibility requirements.
