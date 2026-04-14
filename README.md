@@ -94,4 +94,12 @@ fallback_scenario: "out-of-domain request"
 
 ## Credits
 
-A conversation design-specific adaptation of the Content Design Prompt Library by Adedayo Agarau.
+A conversation design-specific adaptation of the Content Design Prompt Library by Adedayo Agarau. Referred-to literature is mentioned in the respective prompt sections.
+
+---
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share, adapt, and build upon this material for any purpose, including commercially, as long as you provide appropriate credit to Philipp Haenggi, link to the license, and indicate if changes were made.
