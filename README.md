@@ -5,8 +5,6 @@ date: 2026-04-14
 
 # Conversation Design Prompt Library
 
-**v2.1** | 2026-04-14
-
 > **Production-ready prompt templates** for designing human-centered conversational AI experiences and accessible, localized content.
 
 ## Purpose
@@ -81,7 +79,7 @@ Build conversational experiences that work for everyone, everywhere:
 conversation-design/_conversational-ai/handoff-to-human.md
 
 # Fill in variables
-ai_assistant_name: "Mia"
+ai_assistant_name: "MyAssist"
 product_domain: "insurance claims"
 handoff_trigger: "customer frustration or policy dispute"
 tone: "empathetic, professional"
