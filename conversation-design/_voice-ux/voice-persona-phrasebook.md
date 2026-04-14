@@ -28,6 +28,7 @@ voice_persona_phrasebook:
       definition: "A voice persona's linguistic fingerprint is the unique combination of word choices, discourse markers, acknowledgment tokens, and speech patterns that make the agent recognizably 'itself' across interactions. Just as people have recognizable ways of speaking, a well-designed voice agent should have consistent linguistic habits."
       why_it_matters: "In voice-only interaction, the user has no visual brand cues (logo, color, typography). The agent's way of speaking IS the brand. Every word choice is a persona choice."
       ca_basis: "In conversation analysis, 'recipient design' (Sacks, Schegloff & Jefferson, 1974) describes how speakers tailor their talk to their audience. The phrasebook is the systematization of recipient design for a voice agent."
+      situational_register_modulation: "A persona's linguistic fingerprint is not flat — it should modulate lexically in parallel with prosodic shifts (see prosodic-design-intonation.md, situational_personality_and_recipient_design). When the prosodic profile shifts to calm authority, the phrasebook should surface tokens from the empathetic/processing registers; when shifting to dynamic energy, surface tokens from the positive/celebratory registers. Map phrasebook token sets to situational profiles in step_5 of the build process below."
 
     consistency_over_variety:
       principle: "It is better to use the same 4-5 acknowledgment tokens consistently than to cycle through 20 different ones. Consistency builds recognition; variety creates unpredictability."
@@ -182,7 +183,7 @@ voice_persona_phrasebook:
       step_2: "For each category above, select 3-6 phrases that embody those traits"
       step_3: "Test phrases spoken aloud — do they sound natural? Do they sound like the same person?"
       step_4: "Check for register consistency — no mixing of formal/casual"
-      step_5: "Map phrases to contexts (when to use which variant)"
+      step_5: "Map phrases to contexts and situational profiles — for each phrasebook category, identify which tokens are appropriate for each situational prosodic profile (calm_authority, dynamic_energy, conversational_baseline, grounded_warmth from prosodic-design-intonation.md). Example: a Warm Expert in calm_authority mode uses 'Let me look into that for you' (measured, reassuring), while in dynamic_energy mode uses 'Oh, great news on that!' (enthusiastic, forward-moving). This ensures lexical and prosodic layers stay synchronized rather than creating a jarring mismatch (e.g., excited words delivered in a flat tone, or calm words delivered with high energy)."
       step_6: "Create a 'never say' list — phrases that violate the persona"
     maintenance: "Review the phrasebook quarterly. Remove phrases that feel stale. Add new ones that emerge from user testing. Monitor for 'persona drift.'"
 ```

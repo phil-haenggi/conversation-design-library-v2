@@ -171,6 +171,71 @@ prosodic_design:
       pace: "slightly slower than default"
       pausing: "generous — creates space for processing"
       stress: "gentle, even — avoids sharp or sudden emphasis"
+
+    situational_personality_and_recipient_design:
+      principle: "A single agent persona should not be prosodically monolithic. Drawing on recipient design (Sacks, Schegloff & Jefferson, 1974) — the practice of building turns at talk for the particular recipient — the agent's prosodic profile should shift along two primary axes depending on the interaction moment, user state, and domain context."
+      axes:
+        stability:
+          low: "Dynamic pitch contour, wider range, more melodic variation"
+          high: "Narrow pitch range, even contour, steady and composed"
+        expressivity:
+          low: "Restrained energy, measured delivery, minimal emphasis variation"
+          high: "Amplified emphasis, faster tempo bursts, pronounced stress contrasts"
+
+      situational_profiles:
+        dynamic_high_energy:
+          label: "Low stability + High expressivity"
+          best_for: "Lighthearted moments, celebrations, success confirmations, brands that lean into excitement (e.g., entertainment, gaming, energy drinks)"
+          prosodic_markers: "Wide pitch range (±40-60 Hz), faster tempo bursts on positive content, enthusiastic stress on key words, shorter pauses between phrases"
+          example:
+            text: "You DID it! Your streak just hit THIRTY days — that's incredible."
+            guidance: "Wide pitch excursion on 'DID' and 'THIRTY,' fast tempo through celebratory phrase, short pauses to sustain energy."
+
+        calm_authority:
+          label: "High stability + Low expressivity"
+          best_for: "High-stakes scenarios, error states, sensitive domains (insurance claims, medical triage, technical support, financial alerts)"
+          prosodic_markers: "Narrow pitch range (±10-20 Hz), consistent moderate pace, even stress distribution, generous pausing (500-700ms at boundaries)"
+          example:
+            text: "I can see the charge on your account. Let me walk you through the dispute process step by step."
+            guidance: "Narrow pitch movement, even stress across clause, 500ms pause before 'Let me walk you through' to signal composed pacing."
+
+        conversational_baseline:
+          label: "Moderate stability + Moderate expressivity"
+          best_for: "Standard task completion, routine interactions, general-purpose assistants"
+          prosodic_markers: "Natural pitch variation (±20-35 Hz), baseline 130-160 wpm, standard stress patterns"
+          example:
+            text: "Great, I've updated your delivery address. Anything else I can help with?"
+            guidance: "Moderate pitch variation, standard pacing, natural stress on 'updated' and rising terminal on question."
+
+        grounded_warmth:
+          label: "High stability + High expressivity"
+          best_for: "Empathetic moments requiring both emotional attunement and reassurance (e.g., customer frustration de-escalation, healthcare check-ins)"
+          prosodic_markers: "Controlled pitch range but with deliberate, warm stress on empathy tokens; slightly slower pace; generous pauses signaling 'I'm here, no rush'"
+          example:
+            text: "I hear you — that sounds really frustrating. Let's sort this out together."
+            guidance: "Steady pitch base with warm stress on 'hear' and 'frustrating,' slower pace, 400ms pause before 'Let's sort this out' to convey presence."
+
+      design_guidance:
+        - "Map your conversation flow to identify prosodic context zones — moments where the situational profile should shift (e.g., error → calm authority; task success → dynamic energy)"
+        - "Transitions between profiles should be gradient, not binary: shift prosodic parameters over 1-2 turns rather than snapping between extremes"
+        - "The agent's base persona (warm_and_friendly, professional_and_efficient, calm_and_reassuring) sets the center of gravity; situational shifts are modulations around that baseline, not replacements of it"
+        - "Document which contexts trigger which profiles in your phrasebook's context-mapping step (see voice-persona-phrasebook.md, Building the Phrasebook, Step 5)"
+
+      ssml_implementation_hint:
+        calm_authority_example: |
+          <!-- Calm authority profile for dispute flow -->
+          <prosody rate="95%" pitch="-5%" range="narrow">
+            I can see the charge on your account.
+            <break time="500ms"/>
+            Let me walk you through the dispute process step by step.
+          </prosody>
+        dynamic_energy_example: |
+          <!-- Dynamic energy profile for celebration -->
+          <prosody rate="105%" pitch="+8%" range="wide">
+            You DID it!
+            <break time="200ms"/>
+            Your streak just hit THIRTY days — that's incredible.
+          </prosody>
 ```
 
 === EXAMPLES ===
@@ -200,4 +265,4 @@ prosodic_design:
 
 **Accessibility Requirements**: Prosodic design is critical for users who depend on auditory-only processing. Clear intonation contours help users with auditory processing difficulties distinguish questions from statements. Consistent pacing supports users with cognitive differences. Avoid rapid or highly variable speech rates that may be difficult for users with hearing loss or non-native listeners. SSML should be tested with multiple voice engines and screen readers.
 
-**Interactional & Psychological Principles**: Prosody is processed pre-attentively — listeners extract intonation patterns before fully parsing lexical content (Cutler, Dahan & van Donselaar, 1997). The "garden path" effect in spoken language occurs when prosodic cues mislead about syntactic structure — proper prosodic design prevents this. Pitch range correlates with perceived warmth and engagement (Scherer, 1986). Speech rate affects perceived competence and trustworthiness (Apple, Streeter & Krauss, 1979) — moderate rates score highest on both dimensions.
+**Interactional & Psychological Principles**: Prosody is processed pre-attentively — listeners extract intonation patterns before fully parsing lexical content (Cutler, Dahan & van Donselaar, 1997). The "garden path" effect in spoken language occurs when prosodic cues mislead about syntactic structure — proper prosodic design prevents this. Pitch range correlates with perceived warmth and engagement (Scherer, 1986). Speech rate affects perceived competence and trustworthiness (Apple, Streeter & Krauss, 1979) — moderate rates score highest on both dimensions. Prosodic recipient design: speakers systematically adjust pitch range, pace, and stress patterns to the perceived knowledge, identity, and affective state of their co-participant (Sacks, Schegloff & Jefferson, 1974). Subsequent CA work on prosody-in-interaction (Couper-Kuhlen & Selting, 1996; Local, Kelly & Wells, 1986) demonstrates that these adjustments are not stylistic preferences but interactionally organized resources — participants orient to them as meaningful and accountable. In voice agents, this maps to context-sensitive prosodic modulation: shifting the stability-expressivity profile to match the situational demands of each interaction moment.
