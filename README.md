@@ -1,3 +1,8 @@
+---
+version: "2.1."
+date: 2026-04-14
+---
+
 # Conversation Design Prompt Library
 
 > **Production-ready prompt templates** for designing human-centered conversational AI experiences and accessible, localized content.
