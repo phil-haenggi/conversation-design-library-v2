@@ -20,7 +20,7 @@ This library is a starting point, not a finished product. Prompts will be revise
 
 ### Conversational AI (30 prompts)
 
-Design natural, coherent, and resilient dialog flows:
+Design natural(-like), coherent, and resilient conversation flows:
 
 | Category | Prompts |
 |----------|---------|
@@ -34,7 +34,7 @@ Design natural, coherent, and resilient dialog flows:
 
 ### Voice UX (12 prompts)
 
-Design voice-first and voice-only conversational experiences grounded in interactional and psychological principles from Conversation Analysis (CA) and Linguistics:
+Design voice-first and voice-only conversational experiences grounded in interactional principles from Conversation Analysis (CA) and Linguistics:
 
 | Category | Prompts |
 |----------|---------|
