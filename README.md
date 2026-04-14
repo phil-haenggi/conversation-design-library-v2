@@ -44,7 +44,7 @@ Design voice-first and voice-only conversational experiences grounded in interac
 | **Interaction Management** | [Barge-In & Overlap Management](conversation-design/_voice-ux/barge-in-overlap-management.md), [Grounding & Confirmation](conversation-design/_voice-ux/grounding-confirmation-voice.md), [Opening & Closing Sequences](conversation-design/_voice-ux/opening-closing-sequences.md) |
 | **Cross-Modal** | [Voice-to-Screen Handoff](conversation-design/_voice-ux/voice-to-screen-handoff.md) |
 
-The Voice UX prompts draw on principles from Conversation Analysis and Interactional Linguistics (the empirical study of talk and social interaction) – including turn-taking organization (Sacks, Schegloff & Jefferson), repair preference hierarchy, end-focus and information structure (Halliday), and prosodic processing research — to ground design recommendations in how spoken interaction actually works.
+The Voice UX prompts draw on principles from Conversation Analysis and Interactional Linguistics (the empirical study of talk and social interaction) – including turn-taking organization (Sacks, Schegloff & Jefferson), repair preference hierarchy, end-focus and information structure (Halliday), and a situational personality & prosodic-lexical recipient design framework — to ground design recommendations in how spoken interaction actually works.
 
 ### Accessibility & Localization (20 prompts)
 
