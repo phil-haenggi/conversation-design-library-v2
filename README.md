@@ -5,6 +5,8 @@ date: 2026-04-14
 
 # Conversation Design Prompt Library
 
+**v2.1** | 2026-04-14
+
 > **Production-ready prompt templates** for designing human-centered conversational AI experiences and accessible, localized content.
 
 ## Purpose
@@ -72,18 +74,34 @@ Build conversational experiences that work for everyone, everywhere:
 3. **Run with any LLM** — Works with Claude, ChatGPT, Gemini, Microsoft Copilot, or custom models
 4. **Get structured output** — Each prompt returns JSON/YAML you can integrate directly
 
-### Example
+### Examples
 
 ```
 # Open a prompt
-conversation-design/_conversational-ai/fallback-strategies.md
+conversation-design/_conversational-ai/handoff-to-human.md
 
 # Fill in variables
-ai_assistant_name: "Ava"
-confidence_threshold: 0.3
-fallback_scenario: "out-of-domain request"
+ai_assistant_name: "Mia"
+product_domain: "insurance claims"
+handoff_trigger: "customer frustration or policy dispute"
+tone: "empathetic, professional"
 
-# Paste into your LLM and get structured fallback responses
+# Paste into your LLM → get structured handoff flows with
+# transition copy, context summaries, and agent briefing templates
+```
+
+```
+# Open a prompt
+conversation-design/_voice-ux/voice-conversation-repair.md
+
+# Fill in variables
+assistant_name: "Nova"
+platform: "Google Assistant"
+domain: "flight booking"
+repair_trigger: "no-match after destination input"
+
+# Paste into your LLM → get a repair sequence with
+# escalation hierarchy, re-prompt wording, and prosodic cues
 ```
 
 ---
